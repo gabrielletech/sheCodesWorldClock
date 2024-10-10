@@ -13,32 +13,33 @@
         <h1>Welcome to my World Clock Project</h1>
         <div class="container">
             <div>
-                <select>
+                <select id="city">
                     <option value="">Select a city...</option>
-                    <option value="London">London</option>
-                    <option value="New York">New York</option>
-                    <option value="Sydney">Sydney</option>
-                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Europe/London">London</option>
+                    <option value="America/New_York">New York</option>
+                    <option value="Australia/Sydney">Sydney</option>
                 </select>
             </div>
-            <div class="container-display" id="los-angeles">
-                <div class="city-date">
-                    <h2 class="city">Los Angeles </h2>
-                    <p class="date"></p>
+            <div id="cities">
+                <div class="container-display" id="los-angeles">
+                    <div class="city-date">
+                        <h2 class="city">Los Angeles </h2>
+                        <p class="date"></p>
+                    </div>
+                    <div>
+                        <div class="time"><span class="time-span"></span></div>
+                    </div>
                 </div>
-                <div>
-                    <div class="time"><span class="time-span"></span></div>
+                <div class="container-display" id="brisbane">
+                    <div class="city-date">
+                        <h2 class="city">Brisbane </h2>
+                        <p class="date"></p>
+                    </div>
+                    <div>
+                        <div class="time"> <span class="time-span"></span></div>
+                    </div>
                 </div>
-            </div>
-            <div class="container-display" id="brisbane">
-                <div class="city-date">
-                    <h2 class="city">Brisbane </h2>
-                    <p class="date"></p>
-                </div>
-                <div>
-                    <div class="time"> <span class="time-span"></span></div>
-                </div>
-            </div>
+            </div> 
         </div>
     </main>
     <footer>
