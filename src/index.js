@@ -20,6 +20,10 @@ brisbaneTimeElement.innerHTML = `${brisbaneTime.format('h:mm:ss')} <span>${brisb
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
+    //set current timezone
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
    // console.log(cityTimeZone);
     let cityName = cityTimeZone.replace("_", "").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
