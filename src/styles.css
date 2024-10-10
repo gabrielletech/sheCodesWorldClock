@@ -53,9 +53,11 @@ h2 {
     font-weight: bold;
 }
 
-.time-span {
+span, .time-span {
     font-size: 12px
 }
+
+
 
 footer {
     margin-top: 30px;
