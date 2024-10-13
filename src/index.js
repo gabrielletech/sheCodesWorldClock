@@ -4,7 +4,7 @@ let losAngelesElement = document.querySelector("#los-angeles");
 let losAngelesDateElement = losAngelesElement.querySelector(".date");
 let losAngelesTimeElement = losAngelesElement.querySelector(".time");
 let losAngelesTime = moment().tz("America/Los_Angeles");
-losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM do yyyy");
+losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do yyyy");
 
 losAngelesTimeElement.innerHTML = `${losAngelesTime.format('h:mm:ss')} <span>${losAngelesTime.format("A")}</span>` 
 
@@ -13,9 +13,18 @@ let brisbaneElement = document.querySelector("#brisbane");
 let brisbaneDateElement = brisbaneElement.querySelector(".date");
 let brisbaneTimeElement = brisbaneElement.querySelector(".time");
 let brisbaneTime = moment().tz("Australia/Brisbane");
-brisbaneDateElement.innerHTML = brisbaneTime.format("MMMM do yyyy");
+brisbaneDateElement.innerHTML = brisbaneTime.format("MMMM Do yyyy");
 
 brisbaneTimeElement.innerHTML = `${brisbaneTime.format('h:mm:ss')} <span>${brisbaneTime.format("A")}</span>` 
+
+// Cape Town
+let parisElement = document.querySelector("#paris");
+let parisDateElement = parisElement.querySelector(".date");
+let parisTimeElement = parisElement.querySelector(".time");
+let parisTime = moment().tz("France/Paris");
+parisDateElement.innerHTML = parisTime.format("MMMM Do yyyy");
+
+parisTimeElement.innerHTML = `${parisTime.format('h:mm:ss')} <span>${parisTime.format("A")}</span>` 
 }
 
 function updateCity(event) {
